@@ -28,20 +28,20 @@
 	</bean>
 		
 	<!-- mybatis-spring라이브러리 필요 -->
-	<bean id="sqlSessionFactory" 
+	<!-- <bean id="sqlSessionFactory" 
 		class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
 		<property name="configLocation" value="classpath:/mybatisConfig.xml"/>
 		<property name="mapperLocations" value="classpath:/mappers/**/*Mapper.xml"/>
-	</bean>	
+	</bean>	 -->
 	<!-- 마이바티스 세션 생성 -->
 	<!-- 생성자에 factory 넣어준다 -->
 	<!-- template를 이용하면 객체 관리 해준다 -->
-	<bean id ="sqlSession"
+	<!-- <bean id ="sqlSession"
 		class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache">
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
-	
+	 -->
 		<!-- 파일업로드 디렉토리 bean -->
 	<!-- String saveDir = new java.lang.String("D:\ksy\upload"); -->
 	<!-- <bean id="saveDir" class="java.lang.String">
